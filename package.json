@@ -2,9 +2,12 @@
   "name": "github-pr-analyzer-agent",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test:watch": "vitest"
   },
   "repository": {
     "type": "git",
@@ -20,7 +23,6 @@
     "express": "^5.2.1",
     "express-rate-limit": "^8.7.0",
     "morgan": "^1.12.0",
-    "p-queue": "^9.3.3",
     "sqlite": "^5.1.1",
     "sqlite3": "^6.0.1",
     "zod": "^4.5.4"
