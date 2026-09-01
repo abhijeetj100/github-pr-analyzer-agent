@@ -1,4 +1,3 @@
-const { describe, it, expect, beforeAll, afterAll } = require('vitest');
 const { createApp } = require('../src/app');
 const request = require('supertest');
 
